@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis.test.mapper.CostMapper">
+    <resultMap id="CostMapper" type="com.mybatis.test.bean.Cost">
+        <id property="costid" column="cost_id" />
+        <result property="costname" column="cost_name" />
+        <result property="costdesc" column="cost_desc" />
+        <result property="costmark" column="cost_matk"/>
+    </resultMap>
+
+    <select id="getCost" resultMap="CostMapper">
+        select * from cost_info
+    </select>
+    
+    <select id=""
+
+</mapper>
